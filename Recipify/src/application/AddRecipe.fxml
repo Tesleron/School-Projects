@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="504.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addController">
+   <children>
+      <VBox prefHeight="513.0" prefWidth="400.0">
+         <children>
+            <AnchorPane fx:id="root" maxHeight="-1.0" maxWidth="-1.0" prefHeight="314.0" prefWidth="491.0" stylesheets="@application.css" VBox.vgrow="ALWAYS">
+               <children>
+                  <Text layoutX="48.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dish name">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="dishNameTxtFld" layoutX="178.0" layoutY="42.0" />
+                  <Text layoutX="48.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingredients">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ComboBox id="comboBox" fx:id="comboBox" layoutX="178.0" layoutY="94.0" prefWidth="150.0" />
+                  <Text layoutX="47.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preperation">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="submitButton" layoutX="174.0" layoutY="463.0" mnemonicParsing="false" onAction="#submitDishToModel" text="Submit" />
+                  <Button layoutX="177.0" layoutY="137.0" mnemonicParsing="false" onAction="#addOwnIngPopup" text="Add Your Own Ingredient" />
+                  <Button layoutX="335.0" layoutY="94.0" mnemonicParsing="false" onAction="#addIngToCurrentDish" text="+" />
+                  <TextArea fx:id="dishDescTxtArea" layoutX="108.0" layoutY="252.0" prefHeight="200.0" prefWidth="200.0" />
+                  <Text layoutX="49.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ComboBox id="comboBox" fx:id="categoryComboBox" layoutX="178.0" layoutY="176.0" prefHeight="25.0" prefWidth="93.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

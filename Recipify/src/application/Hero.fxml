@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FxmlController">
+   <children>
+      <MenuBar fx:id="myMenuBar" stylesheets="@application.css" VBox.vgrow="NEVER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Recipe">
+               <items>
+                 <MenuItem mnemonicParsing="false" onAction="#openAddWindow" text="Add New Recipe" />
+		 			<MenuItem mnemonicParsing="false" text="Search For Recipe" onAction="#openSearchWindow" />
+		 			<MenuItem mnemonicParsing="false" text="Favorites" onAction="#openFavorites" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About Recipe App" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane fx:id="root" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" stylesheets="@application.css" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>
