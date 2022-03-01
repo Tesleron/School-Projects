@@ -1,0 +1,18 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button:hover {
+    -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6), linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%), linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-scale-y: 1.1;
+}
+
+.button:pressed {
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#fancytext {
+    -fx-font: 100px Tahoma;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, aqua 0%, red 50%);
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
